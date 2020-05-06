@@ -1,0 +1,23 @@
+body{
+background:#FFF59D;
+}
+.container{
+width: 100%
+height: 100%
+}
+.box{
+margin-top: 40px;
+display: flex;
+position: releative;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.box .card{
+margin:20px;
+padding:10px;
+text-align:center;
+height:50px;
+width:150px;
+text-decoration:none;
+}

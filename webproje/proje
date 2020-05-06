@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Oguzhan Turkoglu</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+<section class="container">
+<div  class="box">
+<div  class="card"><a href="hakkımda.html" >Hakkımda</a></div>
+<div  class="card"><a href="iletisim.html">İletişim</a></div>
+<div  class="card"><a href="sehrim.html">Şehrim</a></div>
+<div  class="card"><a href="miras.html">Kültürel Mirasımız</a></div>
+<div  class="card"><a href="ozgecmis.html">Özgeçmişim</a></div>
+<div  class="card"><a href="girisyap.html">Giriş Yap</a></div>
+</div>
+<div style="width: 60%;height: 60%;background:#212121; text-align:center; padding: 50px;margin: 50px auto;border-style: solid;border-width: 2px; border-color: white" ><h1><font color="#FFF59D">Ben Kimim?</font></h1><br>
+<p  style = "font-family:courier"><font color="white">Ben Oğuzhan Türkoğlu.Sakarya Üniversitesi Bilgisayar Mühendisliği 1.sınıf öğrencisiyim.3 Mayıs 2000 tarihinde Adana'da dünyaya geldim.Hâlen Adana'da yaşamaktayım.
+Yaklaşık 8-9 yıl profosyonel olarak satranç oynadım.İl ve bölge çapında başarılar kazandım.Şu an aktif olarak oynamamaktayım fakat ilerleyen zamanlarda geri dönmeyi düşünüyorum.
+Daha çok yazılım alanı ile ilgilenmeye başladım.
+ </p>
+</div>
+</section>
+</body>
+</html>
