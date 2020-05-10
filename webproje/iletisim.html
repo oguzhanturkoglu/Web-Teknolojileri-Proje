@@ -1,10 +1,59 @@
 <!DOCTYPE html>
   <head>
     <meta charset="utf-8">
+	<script src="www/Jquery3.5.1.js">
+	<script type="text/javascript"   src="./jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+    var reg= /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+	
+         
+         function kontrol(){
+             if(document.getElementById("metin").value=="" || document.getElementById("email").value==""  || document.getElementById("mesaj").value=="") {
+                alert("Lütfen Boş Alan Bırakmayınız.");
+                
+             }
+             else if(reg.test(document.getElementById("email").value)==false){
+                alert("Geçersiz E-Posta Adresi Girdiniz Lütfen Tekrar Deneyiniz.");
+             }
+             else{
+                document.write("İsim: "+ document.getElementById("metin").value+ "E mail"+document.getElementById("email").value+"Mesajınız"+document.getElementById("mesaj").value);
+             }
+         }
+         function temizle(){
+            document.getElementById("metin").value="";
+            document.getElementById("email").value="";
+            document.getElementById("mesaj").value="";
+         }
+    </script>
     <title></title>
     <link rel="stylesheet" href="style1.css">
   </head>
   <body>
+  <section class="container">
+<div  class="box">
+<div  class="card"><a href="hakkımda.html" >Hakkımda</a></div>
+<div  class="card"><a href="iletisim.html">İletişim</a></div>
+<div  class="card"><a href="sehrim.html">Şehrim</a></div>
+<div  class="card"><a href="miras.html">Kültürel Mirasımız</a></div>
+<div  class="card"><a href="ozgecmis.html">Özgeçmişim</a></div>
+<div  class="card"><a href="girisyap.html">Giriş Yap</a></div>
+</div>
+	<div class="iletisim">
+        <form class="iletisimm" method="POST" action="iletisim.php" >
+            <p class="metin">
+            <input type="text" name="metin" id="metin" placeholder="Ad Soyad"/>
+            </p>
+            <p class="email">
+            <input type="text" name="metin" id="email" placeholder="E-Mail"/>
+        </p>
+        <p class="mesaj">
+        <textarea type="text" id="mesaj" placeholder="Lütfen mesajınızı giriniz"></textarea>
+        </p>
+        <input type="button" class="gönder"  value="Gönder" onclick="kontrol()" >
+        <input type="button" class="temizle"  value="Temizle" onclick="temizle()" >
+        </form>
+        </div>
+    </div>
   
   </body>
 </html>
